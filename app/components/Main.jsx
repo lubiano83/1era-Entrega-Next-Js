@@ -3,6 +3,8 @@ import Title from './Title';
 
 const Main = () => {
   return (
-    <Title styles={"text-2xl text-gray-800 flex justify-center text-black items-center h-full"}>Bienvenidos a mi E-Commerce!!</Title>
+    <div className='h-full bg-white flex items-center justify-center'>
+      Bienvenidos a mi E-Commerce!!
+    </div>
   )
 }; export default Main;

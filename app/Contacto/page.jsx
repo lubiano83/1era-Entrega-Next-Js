@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contacto = () => {
   return (
-    <div className='h-full bg-red-500 flex justify-center items-center'>
+    <h1 className='h-full bg-red-500 flex justify-center items-center  text-gray-700'>
       Esta es la pagina Contacto!!
-    </div>
+    </h1>
   )
 }; export default Contacto;

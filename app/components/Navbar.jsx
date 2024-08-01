@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className='bg-blue-500 flex justify-evenly items-center py-4'>
+    <div className='bg-blue-500 flex justify-around items-center py-4'>
       <div className='flex gap-1'>
           <Menu />
           <Link href={"/"}>
