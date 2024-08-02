@@ -1,9 +1,8 @@
-import React from 'react'
-import Title from './Title';
+import React from 'react';
 
 const Main = () => {
   return (
-    <div className='h-full bg-white flex items-center justify-center'>
+    <div className='h-full flex items-center justify-center text-4xl'>
       Bienvenidos a mi E-Commerce!!
     </div>
   )

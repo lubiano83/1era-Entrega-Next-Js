@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Title = ({children, styles}) => {
+const Title = ({ children }) => {
   return (
-    <div className={styles}>{children}</div>
+    <div className="font-bold text-4xl hover:text-gray-700">{children}</div>
   )
 }; export default Title;

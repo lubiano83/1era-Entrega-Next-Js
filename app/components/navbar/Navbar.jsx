@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import Title from './Title';
+import Title from '../Title';
 import CartImage from './CartImage';
 import Link from 'next/link';
 
@@ -10,10 +10,10 @@ const Navbar = () => {
       <div className='flex gap-1'>
           <Menu />
           <Link href={"/"}>
-            <Title styles={"font-bold text-4xl hover:text-gray-700"}>AutoShop</Title>
+            <Title>AutoShop</Title>
           </Link>
       </div>
-        <Link href={"/Cart"}>
+        <Link href={"/pages/cart"}>
           <CartImage />
         </Link>
     </div>

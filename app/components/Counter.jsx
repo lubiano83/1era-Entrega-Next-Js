@@ -12,6 +12,10 @@ const Counter = () => {
         if (counter > 1) setCounter(counter - 1);
     };
 
+    const handleAdd = () => {
+      console.log(counter);
+    };
+
   return (
     <div>
         <button onClick={decrement}>-</button>

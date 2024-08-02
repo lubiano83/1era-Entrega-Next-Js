@@ -1,6 +1,6 @@
 import "./globals.css";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 
 // metadata estatica
 export const metadata = {
@@ -20,15 +20,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className="min-h-screen grid grid-rows-[auto_1fr_auto]">
-        <header>
           <Navbar />
-        </header>
-        <main className="bg-white">
           {children}
-        </main>
-        <footer>
           <Footer />
-        </footer>
       </body>
     </html>
   );
