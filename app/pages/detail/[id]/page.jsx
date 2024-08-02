@@ -3,8 +3,8 @@ import GoBack from '../../../components/GoBack';
 import mockData from '../../../data/mockData';
 import { useParams } from 'next/navigation';
 import React from 'react'
-import Button from '../../../components/Button';
 import Image from 'next/image';
+import Counter from '@/app/components/Counter';
 
 const ProductDetail = () => {
 
@@ -29,9 +29,8 @@ const ProductDetail = () => {
       <div className='py-4 px-7 text-gray-700 container text-m'>
         <p><strong>Detalle:</strong> {singleProduct.detail}</p>
       </div>
-      <div className='flex justify-center items-center gap-2 w-full'>
-          <GoBack />
-          <Button>Agregar</Button>
+      <div>
+          <Counter />
       </div>
     </article>
   )

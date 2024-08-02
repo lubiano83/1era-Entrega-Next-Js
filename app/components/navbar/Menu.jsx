@@ -1,25 +1,23 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import MenuList from "./MenuList";
+import { useShow } from "../../hook/useShow";
 
 const Menu = () => {
 
-  const [open, setOpen] = useState(false);
-
-  const handleOpen = () => {
-    setOpen(!open)
-  };
+  const {show, handleShow} = useShow();
 
   return (
-    <div onClick={ handleOpen } className="pl-4">
+    <div onClick={ handleShow } className="pl-4">
       <Image
         src={"/burger-menu-svgrepo-com-white.svg"}
         alt="menu logo"
         height={40}
         width={40}
+        className="hover:scale-110 cursor-pointer"
       />
-      <MenuList handleOpen={ handleOpen } open={ open } />
+      <MenuList handleShow={ handleShow } show={ show } />
     </div>
   );
 }; export default Menu;

@@ -2,7 +2,7 @@
 import React from 'react';
 import { useParams } from 'next/navigation';
 import mockData from '../../../data/mockData';
-import ProductsList from '../ProductsList';
+import ProductsList from '../../../components/products/ProductsList';
 
 const Category = () => {
 

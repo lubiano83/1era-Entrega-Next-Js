@@ -2,7 +2,7 @@ import React from 'react';
 
 const Horario = ({styles}) => {
   return (
-    <div className={styles}>
+    <div className="px-4 text-center font-bold">
       <div>
         Horario de Atención:
       </div>

@@ -1,4 +1,7 @@
+"use client";
 import React, { useState } from 'react'
+import Button from './Button';
+import GoBack from './GoBack';
 
 const Counter = () => {
 
@@ -14,13 +17,20 @@ const Counter = () => {
 
     const handleAdd = () => {
       console.log(counter);
+      setCounter(1);
     };
 
   return (
-    <div>
-        <button onClick={decrement}>-</button>
-        <span>{counter}</span>
-        <button onClick={increment}>+</button>
+    <div className='flex flex-col justify-center items-center gap-2'>
+      <div className='felx items-center gap-2 text-xl font-bold'>
+        <Button handleClick={decrement}>-</Button>
+        <span className='text-gray-700 p-3'>{counter}</span>
+        <Button handleClick={increment}>+</Button>
+      </div>
+      <div className='flex justify-center items-center gap-2'>
+        <GoBack />
+        <Button handleClick={handleAdd}>Agregar</Button>
+      </div>
     </div>
   )
 }; export default Counter;

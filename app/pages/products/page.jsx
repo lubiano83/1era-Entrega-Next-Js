@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import ProductsList from './ProductsList';
+import ProductsList from '../../components/products/ProductsList';
 import mockData from '../../data/mockData'; 
 
 const Shop = () => {
