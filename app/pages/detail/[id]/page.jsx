@@ -15,7 +15,7 @@ const ProductDetail = () => {
     <article className='bg-white flex justify-center items-center flex-col py-8'>
       <div className='flex items-center flex-wrap justify-center'>
         <div className='bg-white'>
-            <Image src={singleProduct.img} alt={singleProduct.model} height={288} width={288} />
+            <Image src={singleProduct.img} alt={singleProduct.model} height={288} width={288} className='hover:scale-150 hover:border-2 hover:border-gray-700 hover:rounded-2xl' />
         </div>
         <div className='p-4 text-gray-700 h-72 flex flex-col items-start justify-center gap-4 text-xl'>
             <p><strong>Categoria:</strong> {singleProduct.category}</p>
