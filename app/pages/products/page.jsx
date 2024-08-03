@@ -5,7 +5,7 @@ import mockData from '../../data/mockData';
 
 const Shop = () => {
   return (
-    <div className='flex justify-center items-center w-full h-full'>
+    <div className='flex justify-center items-center w-full h-full pb-8'>
      <ProductsList category={"all"} data={mockData} />
     </div>
   )

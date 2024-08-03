@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '../Button';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePrice } from '../../hook/usePrice';
+import { usePrice } from '../../hooks/usePrice';
 
 const ProductCard = ({id, img, category, brand, model, quantity, price, description }) => {
 

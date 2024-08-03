@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import MenuList from "./MenuList";
-import { useShow } from "../../hook/useShow";
+import { useShow } from "../../hooks/useShow";
 
 const Menu = () => {
 

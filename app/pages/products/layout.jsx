@@ -1,9 +1,9 @@
-import NavigationMenu from '../../components/NavigationMenu';
+import NavigationMenu from '../../components/products/NavigationMenu';
 import React from 'react';
 
 const ShopLayout = ({children}) => {
   return (
-    <div className='h-full bg-white pb-8'>
+    <div className='h-full bg-white'>
         <NavigationMenu />
         {children}
     </div>
