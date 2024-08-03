@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className='flex gap-1'>
           <Menu isDarkMode={isDarkMode} />
           <Link href={"/"}>
-            <Title>AutoShop</Title>
+            <Title styles={"font-bold text-4xl hover:text-gray-700"}>AutoShop</Title>
           </Link>
       </div>
         <SwitchLight toggleDarkMode={toggleDarkMode} />

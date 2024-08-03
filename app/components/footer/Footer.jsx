@@ -15,7 +15,7 @@ const Footer = () => {
       <Horario />
       <SocialMedia />
       <Link href={"/"}>
-        <Title styles={"font-bold text-4xl px-4 hover:text-gray-700"}>AutoShop</Title>
+        <Title styles={"font-bold text-4xl hover:text-gray-700"}>AutoShop</Title>
       </Link>
     </div>
   )
