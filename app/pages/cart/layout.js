@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from '@/app/components/Banner';
+import Banner from '../../components/Banner';
 
 const CartLayout = ({children}) => {
   return (
