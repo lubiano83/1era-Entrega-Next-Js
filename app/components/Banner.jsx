@@ -7,6 +7,6 @@ const Banner = ({children}) => {
   const { isDarkMode } = useDarkMode();
 
   return (
-    <div className={`${isDarkMode ? 'bg-orange-400' : 'bg-blue-400'} p-4 w-full text-white font-bold flex justify-evenly items-center`}>{children}</div>
+    <div className={`${isDarkMode ? 'bg-orange-400' : 'bg-blue-400'} p-4 w-full text-white font-bold flex justify-evenly items-center flex-wrap`}>{children}</div>
   )
 }; export default Banner;
