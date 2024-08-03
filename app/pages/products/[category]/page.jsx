@@ -10,7 +10,7 @@ const Category = () => {
   const filterData = category === "all" ? mockData : mockData.filter(item => item.category.toLowerCase() === category.toLowerCase());
 
   return (
-    <div className='h-full text-black bg-white flex justify-center items-center'>
+    <div className='h-full text-black bg-white flex justify-center items-center w-full'>
       <ProductsList category={category} data={filterData} />
     </div>
   )
