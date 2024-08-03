@@ -1,17 +1,17 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 
-const ProductsList = ({ data }) => {
+const LastAdded = ({data}) => {
 
-  const reversedData = [...data].reverse(); // esto para hacer que la data se vea al revez.
+    const reversedData = [...data].reverse().slice(0, 5); // esto para hacer que la data se vea al revez y ver los primeros 5 productos.
 
   return (
     <section className='flex justify-evenly w-full flex-wrap gap-8 m-8'>
         {
-            data.map((product) => (
+            reversedData.map((product) => (
                     <ProductCard key={product.id} {...product} />
                 ))
         }
     </section>
   )
-}; export default ProductsList;
+}; export default LastAdded;

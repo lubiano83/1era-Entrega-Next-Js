@@ -9,6 +9,6 @@ const GoBack = () => {
     const router = useRouter();
 
   return (
-    <Button handleClick={() => router.back()}>Volver Atras</Button>
+    <Button handleClick={() => router.back()}>Volver</Button>
   )
 }; export default GoBack;
