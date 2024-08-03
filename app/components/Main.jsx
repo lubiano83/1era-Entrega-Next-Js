@@ -9,10 +9,11 @@ const Main = () => {
   const { isDarkMode } = useDarkMode();
 
   return (
-    <div className='flex flex-col justify-center items-center gap-8 w-full p-8'>
-      <h1 className={`text-4xl font-bold underline ${isDarkMode ? "text-orange-600" : "text-blue-600"}`}>Bienvenidos a AutoShop!!</h1>
-      <div className='border-2 border-gray-700 px-8 flex flex-col justify-center items-center pt-8 rounded-3xl w-full'>
-        <h2 className='text-2xl'>Ultimos Productos Agregados:</h2>
+    <div className='flex flex-col justify-center items-center gap-8 w-full'>
+      <h1 className={`text-4xl font-bold underline ${isDarkMode ? "text-orange-600" : "text-blue-600"} text-center`}>Bienvenidos a AutoShop!!</h1>
+      <h3 className='text-center text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas pariatur maiores quasi repellat deleniti delectus quidem veniam, minima quis mollitia in beatae blanditiis ut cum aut inventore! Animi, quo. Excepturi doloribus itaque vel sapiente aperiam facilis laborum assumenda ex eveniet praesentium, rem accusantium nostrum quaerat consectetur! Praesentium, quibusdam dolor impedit hic suscipit quisquam porro vel voluptate necessitatibus aspernatur repellat.</h3>
+      <div className='flex flex-col justify-center items-center rounded-3xl w-full'>
+        <h2 className={`text-2xl font-bold ${isDarkMode ? "text-orange-600" : "text-blue-600"}`}>Ultimos Productos Agregados:</h2>
         <LastAdded category={"all"} data={mockData}/>
       </div>
     </div>
