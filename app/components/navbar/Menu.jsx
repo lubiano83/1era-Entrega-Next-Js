@@ -4,7 +4,7 @@ import Image from "next/image";
 import MenuList from "./MenuList";
 import { useShow } from "../../hooks/useShow";
 
-const Menu = () => {
+const Menu = ({isDarkMode}) => {
 
   const {show, handleShow} = useShow();
 
@@ -17,7 +17,7 @@ const Menu = () => {
         width={40}
         className="hover:scale-110 cursor-pointer"
       />
-      <MenuList handleShow={ handleShow } show={ show } />
+      <MenuList handleShow={ handleShow } show={ show } isDarkMode={isDarkMode} />
     </div>
   );
 }; export default Menu;
