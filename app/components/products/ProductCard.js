@@ -4,9 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePrice } from '../../hooks/usePrice';
 
-const ProductCard = ({id, img, category, brand, model, quantity, price, description }) => {
+const ProductCard = ({ id, img, category, brand, model, quantity, price, description }) => {
 
-  const {setPrice} = usePrice(); 
+  const { setPrice } = usePrice(); 
 
   return (
     <article className='border-2 border-gray-800 w-72 rounded-3xl overflow-hidden bg-gray-700 shadow-lg shadow-gray-700'>
@@ -19,7 +19,7 @@ const ProductCard = ({id, img, category, brand, model, quantity, price, descript
         <p>Modelo: {model}</p>
         <p>Descripcion: {description}</p>
         <p>Cantidad: {quantity}</p>
-        <p>Precio: ${setPrice(price)}</p>
+        <p>Precio: ${ price ? setPrice(price) : "" }</p>
       </div>
       <div className='text-center pb-4'>
         <Link href={`/pages/detail/${id}`}>

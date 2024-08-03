@@ -9,9 +9,14 @@ import { usePrice } from '../../hooks/usePrice';
 const ProductDetail = () => {
 
     const { id } = useParams();
-    const singleProduct = mockData.find(product => product.id.toString() === id.toString());
     const { setPrice } = usePrice();
 
+    const singleProduct = mockData.find(product => product.id.toString() === id.toString());
+
+    if(!singleProduct){
+      return console.log("singleProduct no existe");
+    };
+    
   return (
     <article className='bg-white flex justify-center items-center flex-col py-8'>
       <div className='flex items-center flex-wrap justify-center'>
@@ -24,7 +29,7 @@ const ProductDetail = () => {
             <p><strong>Modelo:</strong> {singleProduct.model}</p>
             <p><strong>Descripcion:</strong> {singleProduct.description}</p>
             <p><strong>Cantidad:</strong> {singleProduct.quantity}</p>
-            <p><strong>Precio:</strong> ${setPrice(singleProduct.price)}</p>
+            <p><strong>Precio:</strong> ${singleProduct.price ? setPrice(singleProduct.price) : ""}</p>
         </div>
       </div>
       <div className='pb-4 px-7 text-gray-700 container text-m'>

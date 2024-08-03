@@ -2,7 +2,7 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 import Title from '../Title';
-import { useDarkMode } from '@/app/hooks/useDarkMode';
+import { useDarkMode } from '../../hooks/useDarkMode';
 
 const ProductsList = ({ data, category }) => {
 
