@@ -2,8 +2,8 @@ import React from 'react'
 
 const Cart = () => {
   return (
-    <h1 className='h-full bg-white flex justify-center items-center  text-gray-700 text-2xl'>
+    <div className='bg-white flex justify-center items-center text-gray-700 text-2xl h-full'>
       Esta es la pagina del Carrito!!
-    </h1>
+    </div>
   )
 }; export default Cart;
