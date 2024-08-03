@@ -11,7 +11,7 @@ const ProductsList = ({ data, category }) => {
   return (
     <section className='flex flex-col justify-evenly w-full flex-wrap gap-8 m-8'>
       <Title styles={`${isDarkMode ? "text-orange-600" : "text-blue-600"} text-3xl font-bold flex flex-wrap justify-center items-center text-center`}>Categoria: {category}</Title>
-      <div className='flex justify-evenly items-center w-full'>
+      <div className='flex flex-wrap gap-8 justify-evenly items-center w-full'>
         {
             data.map((product) => (
                     <ProductCard key={product.id} {...product} />

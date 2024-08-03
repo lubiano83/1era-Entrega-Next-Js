@@ -9,7 +9,7 @@ const Menu = ({isDarkMode}) => {
   const {show, handleShow} = useShow();
 
   return (
-    <div onClick={ handleShow } className="pl-4">
+    <div onClick={ handleShow }>
       <Image
         src={"/burger-menu-svgrepo-com-white.svg"}
         alt="menu logo"
