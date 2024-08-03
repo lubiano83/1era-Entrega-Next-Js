@@ -11,7 +11,7 @@ const ProductCard = ({id, img, category, brand, model, quantity, price, descript
   return (
     <article className='border-2 border-gray-800 w-72 rounded-3xl overflow-hidden bg-gray-700 shadow-lg shadow-gray-700'>
       <div className='bg-white'>
-        <Image src={img} alt={model} height={288} width={288} />
+        <Image src={img} alt={`autoshop, ${category}, ${model}, ${brand}, ${description}`} height={288} width={288} />
       </div>
       <div className='p-4 text-white'>
         <p>Categoria: {category}</p>

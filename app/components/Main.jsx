@@ -14,7 +14,7 @@ const Main = () => {
       <h3 className='text-center text-gray-700'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum voluptas pariatur maiores quasi repellat deleniti delectus quidem veniam, minima quis mollitia in beatae blanditiis ut cum aut inventore! Animi, quo. Excepturi doloribus itaque vel sapiente aperiam facilis laborum assumenda ex eveniet praesentium, rem accusantium nostrum quaerat consectetur! Praesentium, quibusdam dolor impedit hic suscipit quisquam porro vel voluptate necessitatibus aspernatur repellat.</h3>
       <div className='flex flex-col justify-center items-center rounded-3xl w-full'>
         <h2 className={`text-2xl font-bold ${isDarkMode ? "text-orange-600" : "text-blue-600"}`}>Ultimos Productos Agregados:</h2>
-        <LastAdded category={"all"} data={mockData}/>
+        <LastAdded data={mockData}/>
       </div>
     </div>
   )
