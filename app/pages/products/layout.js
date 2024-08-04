@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationMenu from '../../components/products/NavigationMenu';
+import NavigationMenu from '../../components/NavigationMenu';
 
 const ShopLayout = ({children}) => {
   return (

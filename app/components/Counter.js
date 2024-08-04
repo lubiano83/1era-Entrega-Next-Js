@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from 'react';
 import Button from './Button';
-import GoBack from './GoBack';
 
 const Counter = () => {
 
@@ -27,8 +26,7 @@ const Counter = () => {
         <span className='text-gray-700 p-3'>{counter}</span>
         <Button handleClick={increment}>+</Button>
       </div>
-      <div className='flex justify-center items-center gap-2'>
-        <GoBack />
+      <div className='flex justify-center items-center'>
         <Button handleClick={handleAdd}>Agregar</Button>
       </div>
     </div>

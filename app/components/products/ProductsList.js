@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import Title from '../Title';
 import { useDarkMode } from '../../hooks/useDarkMode';
@@ -8,6 +8,7 @@ import InputFilter from './InputFilter';
 const ProductsList = ({ data, category }) => {
 
   const { isDarkMode } = useDarkMode();
+  const [productsPrefiltered, setProductsFiltered] = useState([]);
 
   return (
     <section className='flex flex-col justify-evenly w-full flex-wrap gap-8 m-8'>
