@@ -42,6 +42,4 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
       />
     </div>
   );
-};
-
-export default InputFilter;
+}; export default InputFilter;

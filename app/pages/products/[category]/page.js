@@ -7,7 +7,6 @@ import ProductsList from '../../../components/products/ProductsList';
 const Category = () => {
 
   const { category } = useParams();
-  
   const filterData = category === "todos" ? mockData : mockData.filter(item => item.category.toLowerCase() === category.toLowerCase());
 
   if(!filterData){
