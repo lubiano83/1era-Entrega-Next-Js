@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 export const useDarkMode = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  
 
   useEffect(() => {
     try {
