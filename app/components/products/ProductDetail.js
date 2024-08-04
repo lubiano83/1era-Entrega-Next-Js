@@ -18,12 +18,13 @@ const ProductDetail = () => {
     };
     
   return (
-    <article className='bg-white flex justify-center items-center flex-col py-8'>
+    <article className='bg-white flex justify-center items-center flex-col py-8 gap-4'>
       <div className='flex items-center flex-wrap justify-center'>
         <div className='bg-white'>
             <Image src={singleProduct.img} alt={singleProduct.model} height={288} width={288} className='hover:shadow-gray-700 hover:shadow-lg hover:scale-150 hover:border-2 hover:border-gray-700 hover:rounded-2xl' />
         </div>
-        <div className='p-4 text-gray-700 h-72 flex flex-col items-start justify-center gap-4 text-xl'>
+        <div className='p-4 text-gray-700 h-72 flex flex-col items-start justify-center gap-3 text-xl'>
+            <p><strong>Id:</strong> {singleProduct.id}</p>
             <p><strong>Categoria:</strong> {singleProduct.category}</p>
             <p><strong>Marca:</strong> {singleProduct.brand}</p>
             <p><strong>Modelo:</strong> {singleProduct.model}</p>
@@ -32,7 +33,7 @@ const ProductDetail = () => {
             <p><strong>Precio:</strong> ${singleProduct.price ? setPrice(singleProduct.price) : ""}</p>
         </div>
       </div>
-      <div className='pb-4 px-7 text-gray-700 container text-m'>
+      <div className='px-7 text-gray-700 container text-m'>
         <p><strong>Detalle:</strong> {singleProduct.detail}</p>
       </div>
       <div>
