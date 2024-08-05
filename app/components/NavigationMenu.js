@@ -86,6 +86,11 @@ const NavigationMenu = () => {
           {isBrandOpen && (
             <div className="absolute mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+              <Link href={`/pages/products/${category}`}>
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${path === `/pages/products/${category}` ? "underline" : "no-underline"}`} role="menuitem">
+                    Todos
+                  </span>
+                </Link>
                 <Link href={`/pages/products/${category}/hankook`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 ${path === `/pages/products/${category}/hankook` ? "underline" : "no-underline"}`} role="menuitem">
                     Hankook

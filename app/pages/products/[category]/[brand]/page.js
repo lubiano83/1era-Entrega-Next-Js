@@ -9,7 +9,7 @@ const Brand = () => {
   const { brand } = useParams();
   const { category } = useParams();
   const filterData = category === "todos" ? mockData : mockData.filter(item => item.category.toLowerCase() === category.toLowerCase());
-  const filterDataTwo = brand === "" ? filterData : filterData.filter(item => item.brand.toLowerCase() === brand.toLowerCase());
+  const filterDataTwo = brand === "todos" ? filterData : filterData.filter(item => item.brand.toLowerCase() === brand.toLowerCase());
   
   if(!filterData) {
     return console.log("filterData no existe");
