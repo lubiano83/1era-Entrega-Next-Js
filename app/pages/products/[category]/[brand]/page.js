@@ -21,7 +21,7 @@ const Brand = () => {
 
   return (
     <div className='w-full h-full flex'>
-     <ProductsList category={category} data={filterDataTwo} />
+     <ProductsList category={category} brand={brand} data={filterDataTwo} />
     </div>
   )
 }; export default Brand;

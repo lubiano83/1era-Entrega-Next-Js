@@ -4,7 +4,7 @@ import { useDarkMode } from '../../hooks/useDarkMode';
 import Title from '../Title';
 import { useCapitalize } from '../../hooks/useCapitalize';
 
-const InputFilter = ({ data, category, setProductsFiltered }) => {
+const InputFilter = ({ data, category, setProductsFiltered, brand = "todos" }) => {
   const [keyword, setKeyword] = useState("");
   const { isDarkMode } = useDarkMode();
   const { capitalize } = useCapitalize();
@@ -26,7 +26,6 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
         (
           product.model.toLowerCase().includes(keyword.toLowerCase().trim())
           || product.description.toLowerCase().includes(keyword.toLowerCase().trim())
-          // || product.price.toString().includes(keyword.trim())
         )
       );
 
