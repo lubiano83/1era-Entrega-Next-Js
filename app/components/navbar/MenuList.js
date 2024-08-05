@@ -7,7 +7,7 @@ const MenuList = ({ show, handleShow, isDarkMode }) => {
   const path = usePathname();
 
   return (
-    <div className={`${show ? "opacity-100 visible" : "opacity-0 invisible"} transition-all fixed inset-0 bg-black/50 flex justify-start`}>
+    <div className={`${show ? "opacity-100 visible" : "opacity-0 invisible"} transition-all fixed inset-0 bg-black/50 flex justify-start z-20`}>
       <aside className={`${!show ? "translate-x-48" : ""} transition-all w-72 ${isDarkMode ? 'bg-orange-600' : 'bg-blue-600'}`}>
         <div  className='text-white text-right flex justify-end p-4 cursor-pointer text-3xl'>
           <div onClick={handleShow}>X</div>
