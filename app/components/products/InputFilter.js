@@ -24,11 +24,11 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
   
       const productsFilter = productsPrefiltered.filter(product =>
         (
-          product.category.toLowerCase().includes(keyword.toLowerCase())
-          || product.brand.toLowerCase().includes(keyword.toLowerCase())
-          || product.model.toLowerCase().includes(keyword.toLowerCase())
-          || product.description.toLowerCase().includes(keyword.toLowerCase())
-          // || product.price.toString().includes(keyword)
+          product.category.toLowerCase().includes(keyword.toLowerCase().trim())
+          || product.brand.toLowerCase().includes(keyword.toLowerCase().trim())
+          || product.model.toLowerCase().includes(keyword.toLowerCase().trim())
+          || product.description.toLowerCase().includes(keyword.toLowerCase().trim())
+          // || product.price.toString().includes(keyword.trim())
         )
       );
   
