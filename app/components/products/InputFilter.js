@@ -12,23 +12,27 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
   };
 
   useEffect(() => {
-    const productsPrefiltered = data.filter(product => {
-      if (category === "todos") {
-        return true;
-      }
-      return product.category.toLowerCase() === category.toLowerCase();
-    });
-
-    const productsFilter = productsPrefiltered.filter(product =>
-      (
-        product.category.toLowerCase().includes(keyword.toLowerCase())
-        || product.brand.toLowerCase().includes(keyword.toLowerCase())
-        || product.model.toLowerCase().includes(keyword.toLowerCase())
-        || product.description.toLowerCase().includes(keyword.toLowerCase())
-      )
-    );
-
-    setProductsFiltered(productsFilter);
+    try {
+      const productsPrefiltered = data.filter(product => {
+        if (category === "todos") {
+          return true;
+        }
+        return product.category.toLowerCase() === category.toLowerCase();
+      });
+  
+      const productsFilter = productsPrefiltered.filter(product =>
+        (
+          product.category.toLowerCase().includes(keyword.toLowerCase())
+          || product.brand.toLowerCase().includes(keyword.toLowerCase())
+          || product.model.toLowerCase().includes(keyword.toLowerCase())
+          || product.description.toLowerCase().includes(keyword.toLowerCase())
+        )
+      );
+  
+      setProductsFiltered(productsFilter);
+    } catch (error) {
+      console.log(error.message);
+    }
 
   }, [keyword, category, data, setProductsFiltered]);
 

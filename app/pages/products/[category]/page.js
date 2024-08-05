@@ -14,7 +14,7 @@ const Category = () => {
   };
 
   return (
-    <div className='h-full bg-white flex justify-center items-center w-full'>
+    <div className='w-full h-full flex'>
       <ProductsList category={category} data={filterData} />
     </div>
   )
