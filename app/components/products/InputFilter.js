@@ -20,7 +20,12 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
     });
 
     const productsFilter = productsPrefiltered.filter(product =>
-      product.category.toLowerCase().includes(keyword.toLowerCase())
+      (
+        product.category.toLowerCase().includes(keyword.toLowerCase())
+        || product.brand.toLowerCase().includes(keyword.toLowerCase())
+        || product.model.toLowerCase().includes(keyword.toLowerCase())
+        || product.description.toLowerCase().includes(keyword.toLowerCase())
+      )
     );
 
     setProductsFiltered(productsFilter);
@@ -29,7 +34,7 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
 
   return (
     <div className='flex justify-center items-center flex-col gap-4'>
-      <div className='flex flex-col gap-2 justify-center items-center pt-8'>
+      <div className='flex flex-col gap-2 justify-center items-center'>
         <Title styles={`${isDarkMode ? "text-orange-600" : "text-blue-600"} text-3xl font-bold flex flex-wrap justify-center items-center text-center`}>
           Categoria: {category}
         </Title>
