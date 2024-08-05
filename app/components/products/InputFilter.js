@@ -24,14 +24,12 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
   
       const productsFilter = productsPrefiltered.filter(product =>
         (
-          product.category.toLowerCase().includes(keyword.toLowerCase().trim())
-          || product.brand.toLowerCase().includes(keyword.toLowerCase().trim())
-          || product.model.toLowerCase().includes(keyword.toLowerCase().trim())
+          product.model.toLowerCase().includes(keyword.toLowerCase().trim())
           || product.description.toLowerCase().includes(keyword.toLowerCase().trim())
           // || product.price.toString().includes(keyword.trim())
         )
       );
-  
+
       setProductsFiltered(productsFilter);
     } catch (error) {
       console.log(error.message);
@@ -48,7 +46,7 @@ const InputFilter = ({ data, category, setProductsFiltered }) => {
       </div>
       <input
         className='bg-white rounded-xl w-72 h-10 border-2 border-gray-700 px-2 text-gray-700'
-        placeholder='Busca por marca, modelo, etc...'
+        placeholder='Busca por modelo o descripcion...'
         value={keyword}
         onChange={handleChange}
       />
