@@ -1,5 +1,5 @@
 import React from 'react'
-import NavigationMenu from '../../../components/NavigationMenu';
+import NavigationMenu from '../../../components/filters/NavigationMenu';
 
 const DetailLayout = ({children}) => {
   return (

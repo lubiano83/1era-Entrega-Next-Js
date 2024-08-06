@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import ProductCard from './ProductCard';
-import InputFilter from './InputFilter';
+import InputFilter from '../filters/InputFilter';
 
 const ProductsList = ({ data, category, brand }) => {
 

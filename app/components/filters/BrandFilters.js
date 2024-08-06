@@ -15,8 +15,8 @@ const BrandFilters = ({toggleBrandDropdown, isBrandOpen, closeDropdowns, isDarkM
             <div className={`absolute mt-2 z-10 w-36 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
               {category !== "todos" || category === "todos" ?
-              <Link href={`/pages/products/${category}/todos`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/todos` ? "underline" : "no-underline"}`} role="menuitem">
+              <Link href={`/pages/products/${category}`}>
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}` ? "underline" : "no-underline"}`} role="menuitem">
                     Todos
                   </span>
                 </Link> : ""}
