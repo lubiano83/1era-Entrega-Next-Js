@@ -44,7 +44,7 @@ const InputFilter = ({ data, category, setProductsFiltered, brand = "todos" }) =
         </Title>
       </div>
       <input
-        className='bg-white rounded-xl w-72 h-10 border-2 border-gray-700 px-2 text-gray-700'
+        className='bg-white rounded-xl w-72 h-10 border-2 border-gray-700 px-2 text-gray-700 shadow-gray-700 shadow-sm'
         placeholder='Busca por modelo o descripcion...'
         value={keyword}
         onChange={handleChange}

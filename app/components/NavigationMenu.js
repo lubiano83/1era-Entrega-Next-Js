@@ -30,16 +30,16 @@ const NavigationMenu = () => {
 
   return (
     <Banner>
-      <div className="flex gap-2 w-full justify-evenly flex-wrap">
+      <div className="flex w-full justify-evenly flex-wrap gap-4">
         <div className="relative">
           <button
             onClick={toggleCategoryDropdown}
-            className={`px-4 py-2 text-white hover:text-gray-700 font-bold rounded-md focus:outline-none`}
+            className={`text-white hover:text-gray-700 font-bold rounded-md focus:outline-none`}
           >
             Categorías
           </button>
           {isCategoryOpen && (
-            <div className={`absolute mt-2 w-48 z-10 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
+            <div className={`absolute mt-2 w-36 z-10 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <Link href="/pages/products">
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === "/pages/products" ? "underline" : "no-underline"}`} role="menuitem">
@@ -79,12 +79,12 @@ const NavigationMenu = () => {
         <div className="relative">
           <button
             onClick={toggleBrandDropdown}
-            className={`px-4 py-2 text-white hover:text-gray-700  font-bold rounded-md focus:outline-none`}
+            className={`text-white hover:text-gray-700  font-bold rounded-md focus:outline-none`}
           >
             Marcas
           </button>
           {isBrandOpen && (
-            <div className={`absolute mt-2 z-10 w-48 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
+            <div className={`absolute mt-2 z-10 w-36 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
               {category !== "todos" || category === "todos" ?
               <Link href={`/pages/products/${category}/todos`}>

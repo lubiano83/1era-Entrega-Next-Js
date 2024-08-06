@@ -15,7 +15,7 @@ const MenuList = ({ show, handleShow, isDarkMode }) => {
         <ul style={{ height: 'calc(100vh - 72px)' }} className='flex mt-4 flex-col gap-4 px-3 pb-4 justify-evenly text-center'>
           <Link href={"/"}><div className={`text-white p-2 hover:text-gray-700 font-bold ${path === "/" ? "underline" : "no-underline"}`}>Inicio</div></Link>
           <Link href={"/pages/products"}><div className={`text-white p-2 hover:text-gray-700 font-bold ${path === "/pages/products" ? "underline" : "no-underline"}`} >Tienda</div></Link>
-          <Link href={"/pages/cart"}><div className={`text-white p-2 hover:text-gray-700 font-bold ${path === "/pages/cart" ? "underline" : "no-underline"}`}>Carrito</div></Link>
+          <Link href={"/pages/login"}><div className={`text-white p-2 hover:text-gray-700 font-bold ${path === "/pages/login" ? "underline" : "no-underline"}`}>Login</div></Link>
           <Link href={"/pages/admin"}><div className={`text-white p-2 hover:text-gray-700 font-bold ${path === "/pages/admin" ? "underline" : "no-underline"}`}>Admin</div></Link>
         </ul>
       </aside>
