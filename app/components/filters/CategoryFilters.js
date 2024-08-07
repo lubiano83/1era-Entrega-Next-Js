@@ -7,7 +7,7 @@ const CategoryFilters = ({toggleCategoryDropdown, closeDropdowns, isDarkMode, pa
     <div className="relative">
           <button
             onClick={toggleCategoryDropdown}
-            className={`text-white hover:text-gray-700 font-bold rounded-md focus:outline-none`}
+            className={`text-white hover:text-gray-700 font-bold rounded-md focus:outline-none h-auto max-h-72 scroll-my-1`}
           >
             Categorías
           </button>

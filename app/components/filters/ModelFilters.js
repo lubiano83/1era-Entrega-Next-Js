@@ -7,7 +7,7 @@ const ModelFilters = ({toggleModelDropdown, isModelOpen, closeDropdowns, isDarkM
     <div className="relative">
           <button
             onClick={toggleModelDropdown}
-            className={`text-white hover:text-gray-700  font-bold rounded-md focus:outline-none`}
+            className={`text-white hover:text-gray-700 font-bold rounded-md focus:outline-none h-auto max-h-72 scroll-my-1`}
           >
             Modelos
           </button>
@@ -95,19 +95,19 @@ const ModelFilters = ({toggleModelDropdown, isModelOpen, closeDropdowns, isDarkM
                 {(category === "neumaticos" && brand === "hankook") ?
                 <Link href={`/pages/products/${category}/${brand}/155-65R13`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/155-65R13` ? "underline" : "no-underline"}`} role="menuitem">
-                    155/65R13
+                    155-65R13
                   </span>
                 </Link> : ""}
                 {(category === "neumaticos" && brand === "hankook") ?
                 <Link href={`/pages/products/${category}/${brand}/185-65R14`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/185-65R14` ? "underline" : "no-underline"}`} role="menuitem">
-                    185/65R14
+                    185-65R14
                   </span>
                 </Link> : ""}
                 {(category === "neumaticos" && brand === "hankook") ?
                 <Link href={`/pages/products/${category}/${brand}/175-60R15`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/175-60R15` ? "underline" : "no-underline"}`} role="menuitem">
-                    175/60R15
+                    175-60R15
                   </span>
                 </Link> : ""}
               </div>

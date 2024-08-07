@@ -7,7 +7,7 @@ const BrandFilters = ({toggleBrandDropdown, isBrandOpen, closeDropdowns, isDarkM
     <div className="relative">
           <button
             onClick={toggleBrandDropdown}
-            className={`text-white hover:text-gray-700  font-bold rounded-md focus:outline-none`}
+            className={`text-white hover:text-gray-700  font-bold rounded-md focus:outline-none h-auto max-h-72 scroll-my-1`}
           >
             Marcas
           </button>
