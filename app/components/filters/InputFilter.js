@@ -1,10 +1,8 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { useCapitalize } from '@/app/hooks/useCapitalize';
 
 const InputFilter = ({ data, category, setProductsFiltered }) => {
   const [keyword, setKeyword] = useState("");
-  const { capitalize } = useCapitalize();
 
   const handleChange = (e) => {
     setKeyword(e.target.value);

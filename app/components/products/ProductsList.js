@@ -10,7 +10,7 @@ const ProductsList = ({ data, category, brand }) => {
 
   return (
     <section className='flex flex-col w-full gap-8 m-8'>
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col justify-center items-center gap-4'>
         <DynamicTitle />
         <InputFilter data={data} brand={brand} category={category} setProductsFiltered={setProductsFiltered} />
       </div>
