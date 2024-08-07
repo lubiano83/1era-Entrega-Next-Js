@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import { useDarkMode } from '../hooks/useDarkMode';
-import { useCapitalize } from '../hooks/useCapitalize';
+import { useDarkMode } from '../../hooks/useDarkMode';
+import { useCapitalize } from '../../hooks/useCapitalize';
 import { useParams } from 'next/navigation';
 
 const DynamicTitle = () => {

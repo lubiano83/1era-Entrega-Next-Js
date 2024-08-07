@@ -2,10 +2,9 @@
 import React from 'react';
 import Menu from './Menu';
 import Logo from '../Logo';
-import CartImage from './CartImage';
 import Link from 'next/link';
-import SwitchLight from './SwitchLight';
 import { useDarkMode } from "../../hooks/useDarkMode";
+import SvgImage from './SvgImage';
 
 const Navbar = () => {
 
@@ -19,9 +18,9 @@ const Navbar = () => {
             <Logo />
           </Link>
       </div>
-        <SwitchLight toggleDarkMode={toggleDarkMode} />
+        <SvgImage src={"/light-svgrepo-com-white.svg"} toggleDarkMode={toggleDarkMode}/>
         <Link href={"/pages/cart"}>
-          <CartImage />
+          <SvgImage src={"/cart-shopping-svgrepo-com-white.svg"} />
         </Link>
     </div>
   )
