@@ -22,92 +22,92 @@ const ModelFilters = ({toggleModelDropdown, isModelOpen, closeDropdowns, isDarkM
                 </Link> : ""}
                 {(category === "aceites" && brand === "shell") ?
                 <Link href={`/pages/products/${category}/${brand}/5W-30`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/5W-30` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/5W-30` ? "underline" : "no-underline"}`} role="menuitem">
                     5W-30
                   </span>
                 </Link> : ""}
                 {(category === "aceites" && brand === "shell") ?
                 <Link href={`/pages/products/${category}/${brand}/10W-40`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/10W-40` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/10W-40` ? "underline" : "no-underline"}`} role="menuitem">
                     10W-40
                   </span>
                 </Link> : ""}
                 {(category === "aceites" && brand === "shell") ?
                 <Link href={`/pages/products/${category}/${brand}/15W-40`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/15W-40` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/15W-40` ? "underline" : "no-underline"}`} role="menuitem">
                     15W-40
                   </span>
                 </Link> : ""}
                 {(category === "aromatizantes" && brand === "paloma") ?
                 <Link href={`/pages/products/${category}/${brand}/Happy-Bag`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/Happy-Bag` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/Happy-Bag` ? "underline" : "no-underline"}`} role="menuitem">
                     Happy-Bag
                   </span>
                 </Link> : ""}
                 {(category === "aromatizantes" && brand === "paloma") ?
                 <Link href={`/pages/products/${category}/${brand}/Parfum`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/Parfum` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/Parfum` ? "underline" : "no-underline"}`} role="menuitem">
                     Parfum
                   </span>
                 </Link> : ""}
                 {(category === "aromatizantes" && brand === "paloma") ?
                 <Link href={`/pages/products/${category}/${brand}/Woody`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/Woody` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/Woody` ? "underline" : "no-underline"}`} role="menuitem">
                     Woody
                   </span>
                 </Link> : ""}
                 {(category === "baterias" && brand === "hankook") ?
                 <Link href={`/pages/products/${category}/${brand}/MF54321`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/MF54321` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/MF54321` ? "underline" : "no-underline"}`} role="menuitem">
                     MF54321
                   </span>
                 </Link> : ""}
                 {(category === "baterias" && brand === "hankook") ?
                 <Link href={`/pages/products/${category}/${brand}/MF55457`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/MF55457` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/MF55457` ? "underline" : "no-underline"}`} role="menuitem">
                     MF55457
                   </span>
                 </Link> : ""}
                 {(category === "baterias" && brand === "hankook") ?
                 <Link href={`/pages/products/${category}/${brand}/MF47600`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/MF47600` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/MF47600` ? "underline" : "no-underline"}`} role="menuitem">
                     MF47600
                   </span>
                 </Link> : ""}
                 {(category === "filtros" && brand === "mann") ?
                 <Link href={`/pages/products/${category}/${brand}/C30171`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/C30171` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/C30171` ? "underline" : "no-underline"}`} role="menuitem">
                     C30171
                   </span>
                 </Link> : ""}
                 {(category === "filtros" && brand === "mann") ?
                 <Link href={`/pages/products/${category}/${brand}/HU718-5X`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/HU718-5X` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/HU718-5X` ? "underline" : "no-underline"}`} role="menuitem">
                     HU718-5X
                   </span>
                 </Link> : ""}
                 {(category === "filtros" && brand === "mann") ?
                 <Link href={`/pages/products/${category}/${brand}/W610-6`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/W610-6` ? "underline" : "no-underline"}`} role="menuitem">
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/W610-6` ? "underline" : "no-underline"}`} role="menuitem">
                     W610-6
                   </span>
                 </Link> : ""}
                 {(category === "neumaticos" && brand === "hankook") ?
-                <Link href={`/pages/products/${category}/${brand}/155-65-R13`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/155-65-R13` ? "underline" : "no-underline"}`} role="menuitem">
-                    155-65-R13
+                <Link href={`/pages/products/${category}/${brand}/155-65R13`}>
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/155-65R13` ? "underline" : "no-underline"}`} role="menuitem">
+                    155/65R13
                   </span>
                 </Link> : ""}
                 {(category === "neumaticos" && brand === "hankook") ?
-                <Link href={`/pages/products/${category}/${brand}/185-65-R14`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/185-65-R14` ? "underline" : "no-underline"}`} role="menuitem">
-                    185-65-R14
+                <Link href={`/pages/products/${category}/${brand}/185-65R14`}>
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/185-65R14` ? "underline" : "no-underline"}`} role="menuitem">
+                    185/65R14
                   </span>
                 </Link> : ""}
                 {(category === "neumaticos" && brand === "hankook") ?
-                <Link href={`/pages/products/${category}/${brand}/175-60-R15`}>
-                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${brand}/${brand}/175-60-R15` ? "underline" : "no-underline"}`} role="menuitem">
-                    175-60-R15
+                <Link href={`/pages/products/${category}/${brand}/175-60R15`}>
+                  <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/175-60R15` ? "underline" : "no-underline"}`} role="menuitem">
+                    175/60R15
                   </span>
                 </Link> : ""}
               </div>
