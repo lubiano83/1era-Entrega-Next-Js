@@ -6,7 +6,7 @@ const mockData = [
         category: "Neumaticos",
         brand: "Hankook",
         model: "155-65R13",
-        description: "K715 Optimo",
+        description: "K715, Optimo",
         quantity: 4,
         price: 59890,
         detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis aliquam dolorum voluptatem dicta incidunt similique blanditiis ducimus, possimus neque facilis totam corporis illo ipsum dolor odio nobis fugiat modi! Dolores. Atque magni quia rem optio id incidunt culpa voluptatibus. Ipsa, tenetur assumenda officiis sequi voluptas corporis quas obcaecati magni explicabo, earum illo in laborum, repellendus eos sit? Libero, et qui"
@@ -61,7 +61,7 @@ const mockData = [
         category: "Neumaticos",
         brand: "Hankook",
         model: "185-65R14",
-        description: "H724 Optimo",
+        description: "H724, Optimo",
         quantity: 4,
         price: 59890,
         detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis aliquam dolorum voluptatem dicta incidunt similique blanditiis ducimus, possimus neque facilis totam corporis illo ipsum dolor odio nobis fugiat modi! Dolores. Atque magni quia rem optio id incidunt culpa voluptatibus. Ipsa, tenetur assumenda officiis sequi voluptas corporis quas obcaecati magni explicabo, earum illo in laborum, repellendus eos sit? Libero, et qui"
@@ -116,7 +116,7 @@ const mockData = [
         category: "Neumaticos",
         brand: "Hankook",
         model: "175-60R15",
-        description: "H308 Kinergy",
+        description: "H308, Kinergy",
         quantity: 4,
         price: 49890,
         detail: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis aliquam dolorum voluptatem dicta incidunt similique blanditiis ducimus, possimus neque facilis totam corporis illo ipsum dolor odio nobis fugiat modi! Dolores. Atque magni quia rem optio id incidunt culpa voluptatibus. Ipsa, tenetur assumenda officiis sequi voluptas corporis quas obcaecati magni explicabo, earum illo in laborum, repellendus eos sit? Libero, et qui"
