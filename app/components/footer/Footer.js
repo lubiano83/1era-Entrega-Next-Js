@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Title from '../Title';
+import Logo from '../Logo';
 import Horario from './Horario';
 import Link from 'next/link';
 import SocialMedia from './SocialMedia';
@@ -15,7 +15,7 @@ const Footer = () => {
       <Horario />
       <SocialMedia />
       <Link href={"/"}>
-        <Title styles={"font-bold text-4xl hover:text-gray-700"}>AutoShop</Title>
+        <Logo />
       </Link>
     </div>
   )

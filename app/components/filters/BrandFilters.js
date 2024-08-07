@@ -20,25 +20,25 @@ const BrandFilters = ({toggleBrandDropdown, isBrandOpen, closeDropdowns, isDarkM
                     Todos
                   </span>
                 </Link> : ""}
-                {category === "todos" || category === "neumaticos" || category === "baterias" ?
+                {category === "neumaticos" || category === "baterias" ?
                 <Link href={`/pages/products/${category}/hankook`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/hankook` ? "underline" : "no-underline"}`} role="menuitem">
                     Hankook
                   </span>
                 </Link> : ""}
-                {category === "todos" || category === "filtros" ?
+                {category === "filtros" ?
                 <Link href={`/pages/products/${category}/mann`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/mann` ? "underline" : "no-underline"}`} role="menuitem">
                     Mann
                   </span>
                 </Link>  : ""}
-                {category === "todos" || category === "aromatizantes" ?
+                {category === "aromatizantes" ?
                 <Link href={`/pages/products/${category}/paloma`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/paloma` ? "underline" : "no-underline"}`} role="menuitem">
                     Paloma
                   </span>
                 </Link> : ""}
-                {category === "todos" || category === "aceites" ?
+                {category === "aceites" ?
                 <Link href={`/pages/products/${category}/shell`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/shell` ? "underline" : "no-underline"}`} role="menuitem">
                     Shell

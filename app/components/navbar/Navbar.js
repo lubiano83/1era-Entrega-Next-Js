@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import Menu from './Menu';
-import Title from '../Title';
+import Logo from '../Logo';
 import CartImage from './CartImage';
 import Link from 'next/link';
 import SwitchLight from './SwitchLight';
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className='flex gap-1'>
           <Menu isDarkMode={isDarkMode} />
           <Link href={"/"}>
-            <Title styles={"font-bold text-4xl hover:text-gray-700"}>AutoShop</Title>
+            <Logo />
           </Link>
       </div>
         <SwitchLight toggleDarkMode={toggleDarkMode} />
