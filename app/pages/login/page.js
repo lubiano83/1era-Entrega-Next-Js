@@ -1,7 +1,6 @@
 "use client";
 import React from 'react'
 import Button from '@/app/components/Button';
-import Text from '@/app/components/Text';
 import { useDarkMode } from '@/app/hooks/useDarkMode';
 
 const Login = () => {
