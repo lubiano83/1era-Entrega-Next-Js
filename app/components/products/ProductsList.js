@@ -3,16 +3,17 @@ import React, { useState } from 'react';
 import ProductCard from './ProductCard';
 import InputFilter from '../filters/InputFilter';
 import DynamicTitle from './DynamicTitle';
+import mockData from '../../data/mockData';
 
 const ProductsList = ({ data, category, brand }) => {
 
-  const [productsFiltered, setProductsFiltered] = useState(data);
+  const [productsFiltered, setProductsFiltered] = useState(mockData);
 
   return (
     <section className='flex flex-col w-full gap-8 m-8'>
       <div className='flex flex-col justify-center items-center gap-4'>
         <DynamicTitle />
-        <InputFilter data={data} brand={brand} category={category} setProductsFiltered={setProductsFiltered} />
+        <InputFilter data={mockData} brand={brand} category={category} setProductsFiltered={setProductsFiltered} />
       </div>
       <div className='flex flex-wrap gap-8 justify-evenly items-center w-full'>
         {productsFiltered.map((product) => (
