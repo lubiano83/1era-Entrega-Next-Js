@@ -13,7 +13,7 @@ const NavigationMenu = () => {
   const [isBrandOpen, setIsBrandOpen] = useState(false);
   const [isModelOpen, setIsModelOpen] = useState(false);
   const path = usePathname();
-  const { category = "todos", brand = "todos" } = useParams();
+  const { category, brand } = useParams();
   const { isDarkMode } = useDarkMode();
 
   const toggleCategoryDropdown = () => {

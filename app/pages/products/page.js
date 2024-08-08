@@ -6,7 +6,7 @@ const Shop = () => {
 
   return (
     <div className='w-full h-full flex'>
-     <ProductsList category={"todos"} data={mockData} />
+     <ProductsList category={"todos"} brand={"todos"} data={mockData} />
     </div>
   )
 }; export default Shop;
