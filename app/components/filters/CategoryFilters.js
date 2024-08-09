@@ -12,7 +12,7 @@ const CategoryFilters = ({toggleCategoryDropdown, closeDropdowns, isDarkMode, pa
             Categorías
           </button>
           {isCategoryOpen && (
-            <div className={`absolute mt-2 w-36 z-10 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
+            <div className={`absolute mt-2 w-36 z-10 max-h-72 overflow-y-scroll rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 <Link href="/pages/products">
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === "/pages/products" ? "underline" : "no-underline"}`} role="menuitem">

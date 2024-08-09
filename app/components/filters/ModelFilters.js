@@ -17,7 +17,7 @@ const ModelFilters = ({toggleModelDropdown, isModelOpen, closeDropdowns, isDarkM
             Filtros
           </button>
           {isModelOpen && (
-            <div className={`absolute mt-2 z-10 w-36 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
+            <div className={`absolute mt-2 z-10 w-36 rounded-md max-h-72 overflow-y-scroll shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                 {category === "todos" || category !== "todos" || brand === "todos" || brand !== "todos" ?
                 <Link href={`/pages/products/${category}/${brand}`}>

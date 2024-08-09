@@ -12,7 +12,7 @@ const BrandFilters = ({toggleBrandDropdown, isBrandOpen, closeDropdowns, isDarkM
             Marcas
           </button>
           {isBrandOpen && (
-            <div className={`absolute mt-2 z-10 w-36 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
+            <div className={`absolute mt-2 z-10 w-36 max-h-72 overflow-y-scroll rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
               <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
               {category !== "todos" || category === "todos" ?
               <Link href={`/pages/products/${category}`}>
@@ -20,25 +20,25 @@ const BrandFilters = ({toggleBrandDropdown, isBrandOpen, closeDropdowns, isDarkM
                     Todos
                   </span>
                 </Link> : ""}
-                {category === "neumaticos" || category === "baterias" ?
+                {category === "neumaticos" || category === "baterias" || category === "todos" ?
                 <Link href={`/pages/products/${category}/hankook`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/hankook` ? "underline" : "no-underline"}`} role="menuitem">
                     Hankook
                   </span>
                 </Link> : ""}
-                {category === "filtros" ?
+                {category === "filtros" || category === "todos" ?
                 <Link href={`/pages/products/${category}/mann`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/mann` ? "underline" : "no-underline"}`} role="menuitem">
                     Mann
                   </span>
                 </Link>  : ""}
-                {category === "aromatizantes" ?
+                {category === "aromatizantes" || category === "todos" ?
                 <Link href={`/pages/products/${category}/paloma`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/paloma` ? "underline" : "no-underline"}`} role="menuitem">
                     Paloma
                   </span>
                 </Link> : ""}
-                {category === "aceites" ?
+                {category === "aceites" || category === "todos" ?
                 <Link href={`/pages/products/${category}/shell`}>
                   <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/shell` ? "underline" : "no-underline"}`} role="menuitem">
                     Shell
