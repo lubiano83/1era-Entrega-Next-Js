@@ -4,22 +4,22 @@ import Link from 'next/link';
 const Filtros = ({category, brand, closeDropdowns, path}) => {
   return (
     <>
-        {(category === "filtros" && brand === "mann") ?
-        <Link href={`/pages/products/${category}/${brand}/C30171`}>
-            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/C30171` ? "underline" : "no-underline"}`} role="menuitem">
-            C30171
+        {(category === "filtros" && (brand === "mann" || brand === "todos")) ?
+        <Link href={`/pages/products/${category}/${brand}/Aire`}>
+            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/Aire` ? "underline" : "no-underline"}`} role="menuitem">
+              Aire
             </span>
         </Link> : ""}
-        {(category === "filtros" && brand === "mann") ?
-        <Link href={`/pages/products/${category}/${brand}/HU718-5X`}>
-            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/HU718-5X` ? "underline" : "no-underline"}`} role="menuitem">
-            HU718-5X
+        {(category === "filtros" && (brand === "mann" || brand === "todos")) ?
+        <Link href={`/pages/products/${category}/${brand}/Elemento`}>
+            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/Elemento` ? "underline" : "no-underline"}`} role="menuitem">
+              Elemento
             </span>
         </Link> : ""}
-        {(category === "filtros" && brand === "mann") ?
-        <Link href={`/pages/products/${category}/${brand}/W610-6`}>
-            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/W610-6` ? "underline" : "no-underline"}`} role="menuitem">
-            W610-6
+        {(category === "filtros" && (brand === "mann" || brand === "todos")) ?
+        <Link href={`/pages/products/${category}/${brand}/Aceite`}>
+            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/Aceite` ? "underline" : "no-underline"}`} role="menuitem">
+              Aceite
             </span>
         </Link> : ""}
     </>

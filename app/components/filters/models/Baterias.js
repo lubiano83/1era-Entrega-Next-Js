@@ -4,22 +4,22 @@ import Link from 'next/link';
 const Baterias = ({category, brand, closeDropdowns, path}) => {
   return (
     <>
-        {(category === "baterias" && brand === "hankook") ?
-        <Link href={`/pages/products/${category}/${brand}/MF54321`}>
-            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/MF54321` ? "underline" : "no-underline"}`} role="menuitem">
-            MF54321
+        {(category === "baterias" && (brand === "hankook" || brand === "todos")) ?
+        <Link href={`/pages/products/${category}/${brand}/45AH`}>
+            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/45AH` ? "underline" : "no-underline"}`} role="menuitem">
+              45AH
             </span>
         </Link> : ""}
-        {(category === "baterias" && brand === "hankook") ?
-        <Link href={`/pages/products/${category}/${brand}/MF55457`}>
-            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/MF55457` ? "underline" : "no-underline"}`} role="menuitem">
-            MF55457
+        {(category === "baterias" && (brand === "hankook" || brand === "todos")) ?
+        <Link href={`/pages/products/${category}/${brand}/55AH`}>
+            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/55AH` ? "underline" : "no-underline"}`} role="menuitem">
+              55AH
             </span>
         </Link> : ""}
-        {(category === "baterias" && brand === "hankook") ?
-        <Link href={`/pages/products/${category}/${brand}/MF47600`}>
-            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/MF47600` ? "underline" : "no-underline"}`} role="menuitem">
-            MF47600
+        {(category === "baterias" && (brand === "hankook" || brand === "todos")) ?
+        <Link href={`/pages/products/${category}/${brand}/60AH`}>
+            <span onClick={closeDropdowns} className={`block px-4 py-2 text-sm text-white hover:bg-gray-700 ${path === `/pages/products/${category}/${brand}/60AH` ? "underline" : "no-underline"}`} role="menuitem">
+              60AH
             </span>
         </Link> : ""}
     </>

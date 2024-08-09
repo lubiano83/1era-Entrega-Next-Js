@@ -21,7 +21,7 @@ const ProductDetail = () => {
     <article className='bg-white flex justify-center items-center flex-col py-8 gap-4'>
       <div className='flex items-center flex-wrap justify-center'>
         <div className='bg-white'>
-            <Image src={singleProduct.img} alt={singleProduct.model} height={288} width={288} className='bg-white' />
+            <Image src={singleProduct.imageUrl} alt={singleProduct.model} height={288} width={288} className='bg-white' />
         </div>
         <div className='p-4 text-gray-700 h-72 flex flex-col items-start justify-center gap-3 text-xl'>
             <p><strong>Id:</strong> {singleProduct.id}</p>

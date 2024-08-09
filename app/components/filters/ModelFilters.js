@@ -14,7 +14,7 @@ const ModelFilters = ({toggleModelDropdown, isModelOpen, closeDropdowns, isDarkM
             onClick={toggleModelDropdown}
             className={`text-white hover:text-gray-700 font-bold rounded-md focus:outline-none h-auto max-h-72 scroll-my-1`}
           >
-            Modelos
+            Filtros
           </button>
           {isModelOpen && (
             <div className={`absolute mt-2 z-10 w-36 rounded-md shadow-lg ${isDarkMode ? "bg-orange-400" : "bg-blue-400"} ring-1 ring-black ring-opacity-5`}>
